@@ -1,5 +1,13 @@
 # Teste PHP para Desenvolvedor
 
+## Clone:
+ - Clone o projeto e altere os dados do banco no .env
+ - Comandos para executar no terminal:
+	- php artisan config:clear
+	- php artisan cache:clear
+	- php artisan migrate 
+	- php artisan serve
+
 ## Objetivo:
 Desenvolver uma ferramenta simples de cadastro de tickets para o setor de atendimento ao cliente da empresa.
 
