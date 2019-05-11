@@ -1,12 +1,15 @@
 # Teste PHP para Desenvolvedor
 
 ## Clone:
- - Clone o projeto e altere os dados do banco no .env
- - Comandos para executar no terminal:
-	- php artisan config:clear
-	- php artisan cache:clear
-	- php artisan migrate 
-	- php artisan serve
+ - Comandos para executar no terminal dentro do diretório src/:
+	- docker-compose up -d
+	- docker exec -it westwing-app composer install
+	- docker exec -it westwing-app php artisan config:cache
+	- docker exec -it westwing-app php artisan cache:clear
+	- docker exec -it westwing-app php artisan migrate
+	- docker exec -it westwing-app php artisan serve
+ - Cole o link http://localhost:80 no browser para executar
+
 
 ## Objetivo:
 Desenvolver uma ferramenta simples de cadastro de tickets para o setor de atendimento ao cliente da empresa.
